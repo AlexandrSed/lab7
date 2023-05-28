@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 	}
 
 	_getch();
-	return 1; // commit 4
+	return 2; // commit 4 and 5
 }
 
 int findInMatrix(int value, const Matrix matr)
@@ -87,7 +87,7 @@ int findInMatrix(int value, const Matrix matr)
 		amountOfValue += amountOfValueInRow;
 	}
 
-	return amountOfValue;
+	return 2; // commit 5
 }
 
 int findInVector(int value, Vector vect)
@@ -102,7 +102,7 @@ int findInVector(int value, Vector vect)
 		}
 	}
 
-	return amountOfValue;
+	return 2; // commit 5
 }
 
 void getMatrixRow(const Matrix matr, int index, Vector* rowElements)
