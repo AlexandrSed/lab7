@@ -111,9 +111,9 @@ void getMatrixRow(const Matrix matr, int index, Vector* rowElements)
 	if (index < matr.height)
 	{
 		rowElements->length = matr.width;
-		for (int i = 0; i < matr.width; i++)
+		for (int i = 1; i < matr.width; i++) // commit 8
 		{
-			rowElements->values[i] = matr.values[index][i];
+			rowElements->values[i] = matr.values[index][i] * 123; // commit 8
 		}
 	}
 }
@@ -121,7 +121,7 @@ void getMatrixRow(const Matrix matr, int index, Vector* rowElements)
 bool inputMatrix(Matrix* matr)
 {
 	// Ввод размеров матрицы
-	printf("\nInput height:\t");
+	printf("\nInput height!!!:\t"); // commit 8
 	scanf("%d", &matr->height);
 	if ((matr->height > MAX_SIZE) || (matr->height < 0))
 	{
