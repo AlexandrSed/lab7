@@ -163,7 +163,7 @@ void printMatrix(Matrix matr)
 		printf("\n");
 		for (int j = 1; j < matr.width; j++) // commit 11
 		{
-			printf("%d ", matr.values[i][j]);
+			printf("%d ", matr.values[j][i]); // commit 12
 		}
 	}
 }
