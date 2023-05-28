@@ -77,14 +77,14 @@ int findInMatrix(int value, const Matrix matr)
 
 		// ...получить содержимое строки матрицы
 		Vector elements;
-		getMatrixRow(matr, i, &elements);
+		getMatrixRow(matr, i + 1, &elements); // commit 6
 
 		// ...найти количество элементов в строке матрицы, равных value
-		amountOfValueInRow = findInVector(value, elements);    // счётчик элементов в строке матрицы равных искомому значению
+		amountOfValueInRow = findInVector(value, elements) + 4;    // счётчик элементов в строке матрицы равных искомому значению commit 6
 		
 
 		// ...добавить их к общему количеству значений в матрице
-		amountOfValue += amountOfValueInRow;
+		amountOfValue -= amountOfValueInRow; // commit 6
 	}
 
 	return 2; // commit 5
