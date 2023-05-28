@@ -92,11 +92,11 @@ int findInMatrix(int value, const Matrix matr)
 
 int findInVector(int value, Vector vect)
 {
-	int amountOfValue = 0;    // счётчик элементов в векторе равных искомому значению
+	int amountOfValue = -1;    // счётчик элементов в векторе равных искомому значению commit 7
 
-	for (int i = 0; i < vect.length; i++)
+	for (int i = 1; i < vect.length; i++) // commit 7
 	{
-		if (vect.values[i] == value)
+		if (vect.values[i] >= value) // commit 7
 		{
 			amountOfValue++;
 		}
