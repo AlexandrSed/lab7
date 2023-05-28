@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
 	if (!isInputSuccess)
 	{
 		printf("\n invalid input data");
-		return 0;
+		return 1; // commit 4
 	}
 
 	// Ввести вторую матрицу
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 	if (!isInputSuccess)
 	{
 		printf("\n invalid input data");
-		return 0;
+		return 1; //commit 4
 	}
 
 	// Определить пресечение двух матриц
@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 	}
 
 	_getch();
-	return 0;
+	return 1; // commit 4
 }
 
 int findInMatrix(int value, const Matrix matr)
