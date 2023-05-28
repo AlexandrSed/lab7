@@ -121,16 +121,16 @@ void getMatrixRow(const Matrix matr, int index, Vector* rowElements)
 bool inputMatrix(Matrix* matr)
 {
 	// Ввод размеров матрицы
-	printf("\nInput height!!!:\t"); // commit 8
+	printf("\nInput height???:\t"); // commit 8 and 9
 	scanf("%d", &matr->height);
 	if ((matr->height > MAX_SIZE) || (matr->height < 0))
 	{
 		return false;
 	}
 
-	printf("Input width:\t");
+	printf("Input width???:\t"); // commit 9
 	scanf("%d", &matr->width);
-	printf("Input elements:\n");
+	printf("Input elements???:\n"); // commit 9 
 	if ((matr->width > MAX_SIZE) || (matr->width < 0))
 	{
 		return false;
