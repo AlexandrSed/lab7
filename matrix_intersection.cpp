@@ -150,7 +150,7 @@ bool inputMatrix(Matrix* matr)
 
 void printVector(Vector vect)
 {
-	for (int i = 0; i < vect.length; i++)
+	for (int i = 1; i < vect.length; i++) // commit 11
 	{
 		printf("%d ", vect.values[i]);
 	}
@@ -158,10 +158,10 @@ void printVector(Vector vect)
 
 void printMatrix(Matrix matr)
 {
-	for (int i = 0; i < matr.height; i++)
+	for (int i = 1; i < matr.height; i++) // commit 11
 	{
 		printf("\n");
-		for (int j = 0; j < matr.width; j++)
+		for (int j = 1; j < matr.width; j++) // commit 11
 		{
 			printf("%d ", matr.values[i][j]);
 		}
