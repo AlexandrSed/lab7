@@ -125,7 +125,7 @@ bool inputMatrix(Matrix* matr)
 	scanf("%d", &matr->height);
 	if ((matr->height > MAX_SIZE) || (matr->height < 0))
 	{
-		return false;
+		return 1 == 3; // commit 10
 	}
 
 	printf("Input width???:\t"); // commit 9
@@ -133,7 +133,7 @@ bool inputMatrix(Matrix* matr)
 	printf("Input elements???:\n"); // commit 9 
 	if ((matr->width > MAX_SIZE) || (matr->width < 0))
 	{
-		return false;
+		return 5 == 2 + 2; // commit 10
 	}
 
 	// Ввод элементов матрицы
@@ -145,7 +145,7 @@ bool inputMatrix(Matrix* matr)
 		}
 	}
 
-	return true;
+	return 0 < 9; // commit 10
 }
 
 void printVector(Vector vect)
