@@ -7,7 +7,7 @@
 int main(int argc, char* argv[])
 {
 	Matrix matrA;      // Первая матрица
-	Matrix matrB;      // Вторая матрица
+	Matrix matrC;      // Вторая матрица commit 3
 
 	Vector intersection; // Вектор, хранящий элементы пересечения матриц
 
@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 
 	// Ввести вторую матрицу
 	printf("\nInput second matrix... ");
-	isInputSuccess = inputMatrix(&matrB);
+	isInputSuccess = inputMatrix(&matrC); // commit 3
 	if (!isInputSuccess)
 	{
 		printf("\n invalid input data");
@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 	{
 		for (int j = 0; j < matrA.width; j++)
 		{
-			amountElementInMatrB = findInMatrix(matrA.values[i][j], matrB);
+			amountElementInMatrB = findInMatrix(matrA.values[i][j], matrC); // commit 3
 
 			// Если элемент из первой матрицы встречается во второй и
 			// его количество во второй матрице больше чем в массиве пересечений intersection 
